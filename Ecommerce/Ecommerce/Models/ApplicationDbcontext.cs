@@ -22,7 +22,7 @@ namespace Ecommerce.Models
 
         public DbSet<Parameter> Parameters { get; set; }
 
-        public DbSet<Ecommerce.Models.ViewapplicationData> ViewapplicationData { get; set; }
+      
 
     }
 }

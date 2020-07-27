@@ -18,6 +18,8 @@ export class ProductsComponent implements OnInit {
   public Parameters: any[] = [] ;
 
   public AllData: any[] = [] ;
+
+  public Currentpage: number = 1;
   constructor(private prdserv: ProductService ) { }
 
   columnDefs = [
@@ -54,7 +56,7 @@ columnDefs3 = [
     this.getAllPrograms();
     this.getAllReports();
     this.getAllParameters();
-    this.getAllViewData();
+    this.getAllViewData(this.Currentpage);
   }
 
   getAllProducts()
@@ -90,11 +92,23 @@ columnDefs3 = [
     );
   }
 
-  getAllViewData()
+  getAllViewData(pagenumber:number)
   {
-    this.prdserv.getViewData().subscribe(
+    this.prdserv.getViewData(pagenumber).subscribe(
       res => {this.AllData = res ; console.log(res)},
       err => console.log(err)
     );
+  }
+
+  next()
+  {
+     this.Currentpage++;
+     this.getAllViewData(this.Currentpage);
+     
+  }
+  prev()
+  {
+    this.Currentpage--;
+    this.getAllViewData(this.Currentpage);
   }
 }

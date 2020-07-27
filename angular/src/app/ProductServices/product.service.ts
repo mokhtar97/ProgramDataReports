@@ -28,8 +28,8 @@ export class ProductService {
    }
 
 
-   getViewData(): Observable<any>{
-    return this.http.get<any>('http://localhost:50670/api/ViewapplicationDatas');
+   getViewData(pagenumber: number): Observable<any>{
+    return this.http.get<any>('http://localhost:50670/api/ViewapplicationDatas?pageNumber=' + pagenumber);
    }
 
 

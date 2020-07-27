@@ -42,9 +42,11 @@
 
 
 <ag-grid-angular
-    style="width: 1500px; height: 710px;"
+    style="width: 1500px; height: 300px;"
     class="ag-theme-alpine"
     [rowData]="AllData"
     [columnDefs]="columnDefs3"
     >
 </ag-grid-angular>
+
+<button (click)="prev()" class="btn btn-primary">prev</button> <button (click)="next()" class="btn btn-primary">Next</button>

@@ -12,7 +12,7 @@ namespace Ecommerce.Models.Repositories
         protected IDbConnection con;
         public BaseRepository()
         {
-            string connectionString = "Data Source=.;Initial Catalog=Ecommerce;Integrated Security=True;";
+            string connectionString = "Data Source=.;Initial Catalog=Ecommerce2;Integrated Security=True;";
             con = new SqlConnection(connectionString);
         }
         public void Dispose()

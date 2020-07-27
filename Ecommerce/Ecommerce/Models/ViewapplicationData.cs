@@ -7,7 +7,7 @@ namespace Ecommerce.Models
 {
     public class ViewapplicationData
     {
-        public int ID { get; set; }
+      
         public int progID { get; set; }
 
         public string progarmEnglishName { get; set; }
@@ -29,7 +29,7 @@ namespace Ecommerce.Models
         public string parameterEnglishName { get; set; }
 
         public string parameterArabicName { get; set; }
-
+        
         public int paramrepID { get; set; }
     }
 }

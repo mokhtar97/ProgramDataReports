@@ -152,3 +152,4 @@ C:\Users\Software team\source\repos\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\
 C:\Users\Software team\source\repos\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csproj.CoreCompileInputs.cache
 C:\Users\Software team\source\repos\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Software team\source\repos\Ecommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Software team\source\repos\Ecommerce\Ecommerce\bin\Debug\netcoreapp3.1\PagedList.dll
